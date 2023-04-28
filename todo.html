@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="todo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>TODO</title>
+</head>
+
+<body class="dark">
+      <ul>
+    <li class="wrap new-task virtual" aria-expanded="false">
+      <div class="check-box" aria-expanded="false"> 
+        <svg class="check tick" width="11" height="8">
+          <path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"></path>
+        </svg>
+      </div>
+      <p class="li-tasks v-det">saad</p>
+      <div class="check-box cross">
+        <svg class="check cross-s" width="18" height="18">
+          <path fill="none" stroke="#FFF" stroke-width="2" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"></path>
+        </svg>
+      </div>
+    </li>
+      </ul>
+
+      <div class="msg"></div>
+
+      <div class="bg">
+        <img class="bg-i" src="/images/bg-desktop-dark.jpg" alt="back">
+      </div>
+      
+      <div class="wrapper">
+
+        <div class="wrap context">
+          <p class="st">TODO</p>
+          <section class="mode" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <path class="ident" fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/>
+            </svg>
+          </section>
+        </div> 
+
+        <div class="wrap new-task">
+          <span class="check-box">    
+            <svg class="check no-ti" width="11" height="8">
+              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/>
+            </svg>
+          </span>
+          <form>
+            <input type="text" id="new-todo" placeholder="Create a new todo...">
+          </form>
+        </div>
+
+        <ul class="tasks">
+        </ul>
+
+        <div class="note">
+          <p>Drag and Drop to re-order list</p>
+        </div>
+
+      </div>
+      
+  <script src="todo.js"></script>
+</body>
+</html>
